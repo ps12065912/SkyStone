@@ -1,0 +1,36 @@
+@Autonomous(name="GayAditya", group="Srida")
+public class GayAditya extends LinearOpMode {
+	/* Declare OpMode members. */
+  	
+	static final double 	FORWARD_SPEED = 0.37; 
+	
+	private DcMotor leftFront = null;
+	private DcMotor rightFront = null;
+	private DcMotor leftBack = null;
+	private DcMotor rightBack = null;
+	private DcMotor leftintake = null;
+	private DcMotor rightintake = null;
+	private DcMotor autonintake = null;
+	private Servo leftServo = null;
+	private Servo rightServo = null;
+	private Servo backServo = null;
+	//Use a Pushbot's hardware
+	private ElapsedTime 	runtime = new ElapsedTime();
+  
+	@Override
+	public void runOpMode() {
+            	
+    	leftFront = hardwareMap.get(DcMotor.class, "leftFront");
+    	rightFront = hardwareMap.get(DcMotor.class, "rightFront");
+    	leftBack = hardwareMap.get(DcMotor.class, "leftBack");
+    	rightBack = hardwareMap.get(DcMotor.class, "rightBack");
+    	leftintake = hardwareMap.get(DcMotor.class, "leftintake");
+    	rightintake = hardwareMap.get(DcMotor.class, "rightintake");
+    	autonintake = hardwareMap.get(DcMotor.class, "autonintake");
+    	leftServo = hardwareMap.get(Servo.class, "leftServo");
+    	rightServo = hardwareMap.get(Servo.class, "rightServo");
+    	backServo = hardwareMap.get(Servo.class, "backServo");
+      
+     
+    	
+   	
